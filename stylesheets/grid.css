@@ -1,0 +1,375 @@
+
+/* ==== Creative Link Effects ==== */
+.cl-effect-18 {
+	position: relative;
+	z-index: 1;
+}
+.cl-effect-18 a {
+	vertical-align: bottom;
+	text-align: center;
+	padding: 0 5px;
+	color: #aecec6;
+	font-weight: 600;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+#work.cl-effect-18 a::before,
+#work.cl-effect-18 a::after {
+	color: #bcb78c;
+	background: #aecec6;
+}
+#contact.cl-effect-18 a::before,
+#contact.cl-effect-18 a::after {
+	color: #aecec6;
+	background: #aecec6;
+}
+.cl-effect-18 a::before,
+.cl-effect-18 a::after {
+	position: absolute;
+	width: 50%; /*important - works with display block for button*/
+	left: 25%; /*important - works with display block for button*/
+	top: 50%;
+	height: 2px;
+	margin-top: -3px;
+	background: #bcb78c;
+	color: #bcb78c;
+	content: '';
+	/*z-index: -1;*/
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+.cl-effect-18 a::before {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+}
+.cl-effect-18 a::after {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	transform: translateY(20px);
+}
+.cl-effect-18 a:hover,
+.cl-effect-18 a:focus {
+	color: #BA524D;
+}
+#work.cl-effect-18 a:hover,
+#work.cl-effect-18 a:focus {
+	color: #BA524D;
+}
+.cl-effect-18 a:hover::before,
+.cl-effect-18 a:hover::after,
+.cl-effect-18 a:focus::before,
+.cl-effect-18 a:focus::after {
+	opacity: 0.7;
+}
+.cl-effect-18 a:hover::before,
+.cl-effect-18 a:focus::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.cl-effect-18 a:hover::after,
+.cl-effect-18 a:focus::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);}
+
+
+/*General Styling*/
+
+.contain-to-grid.img-gallery {background: #fff;}
+
+#grid-gallery.grid-gallery ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#grid-gallery.grid-gallery figure {margin: 0; }
+
+#grid-gallery.grid-gallery figure img {
+	display: block;
+	width: 100%;
+}
+
+#grid-gallery.grid-gallery figcaption h5 {
+	margin: 0;
+	padding: 0 0 0.5rem;
+}
+
+#grid-gallery.grid-gallery figcaption p {
+	margin: 0;
+}
+
+/* Grid style */
+#grid-gallery.grid-gallery section.grid-wrap {
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1em 1.875em;
+}
+
+#grid-gallery.grid-gallery section.grid-wrap ul.grid.no-bullet {
+	margin: 0 auto;
+}
+
+#grid-gallery.grid-gallery section.grid-wrap ul.grid.no-bullet li {
+	width: 25%;
+	float: left;
+	cursor: pointer;
+}
+
+#grid-gallery.grid-gallery ul.grid.no-bullet figure {
+	padding: .6rem;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+#grid-gallery.grid-gallery ul.grid.no-bullet li:hover figure {
+	opacity: 0.7;
+}
+
+#grid-gallery.grid-gallery ul.grid.no-bullet figcaption {
+	background: #55636d;
+	padding: .5rem .25rem .25rem;
+	text-align: center;
+}
+#grid-gallery.grid-gallery ul.grid.no-bullet figcaption h6 {
+	color: #BCEEE1;
+	opacity: .4;
+	letter-spacing: .1rem;
+}
+/* Slideshow style */
+.slideshow {
+	position: fixed;
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 500;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.slideshow-open .slideshow {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.slideshow ul {
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translate3d(0,0,150px);
+	transform: translate3d(0,0,150px);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.slideshow ul.animatable li {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.slideshow-open .slideshow ul {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.slideshow li {
+	width: 660px;
+	height: 560px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -280px 0 0 -330px;
+	visibility: hidden;
+}
+
+.slideshow li.show {
+	visibility: visible;
+}
+
+.slideshow li:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.8);
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.slideshow li.current:after {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+	transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.slideshow figure {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 50px solid #fff;
+	overflow: hidden;
+}
+
+.slideshow figcaption {
+	padding-bottom: 20px;
+}
+
+.slideshow figcaption h6 {
+	font-weight: 300;
+	font-size: 200%;
+}
+
+/* Navigation */
+.slideshow nav span {
+	position: fixed;
+	z-index: 1000;
+	color: #59656c;
+	text-align: center;
+	padding: 3%;
+	cursor: pointer;
+	/*font-size: 2.2em;*/
+}
+
+.slideshow nav span.icon.nav-prev,
+.slideshow nav span.icon.nav-next {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.slideshow nav span.icon.nav-next {
+	right: 0;
+}
+
+.slideshow nav.image-grid span.icon.nav-close {
+	top: 0;
+	right: 0;
+	padding: 0.5rem 1rem;
+	/*color: #fff;*/
+}
+
+.icon:before,
+.icon:after {
+	/*font-family: 'fontawesome';*/
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Example media queries (reduce number of columns and change slideshow layout) */
+
+@media screen and (max-width: 63em) {
+	 /*responsive columns; see "Element sizing" on http://masonry.desandro.com/options.html */
+	#grid-gallery.grid-gallery section.grid-wrap ul.grid.no-bullet li {
+		width: 33.3%;
+	}
+	section.slideshow li {
+		width: 70%;
+		height: 80%;
+		top: 15%;
+		left: 15%;
+		margin: 0;
+	}
+	section.slideshow li figure img.slides {
+		width: auto;
+		margin: 0 auto;
+		max-width: 100%; /*helps to adjust for taller images*/
+	}
+	section.slideshow nav span,
+	section.slideshow nav span.icon.nav-close {
+		font-size: 1.8em;
+		padding: 0.3em;
+	}
+	.info-keys {
+		display: none;
+	}
+}
+@media screen and (max-width: 45em) {
+	#grid-gallery.grid-gallery section.grid-wrap ul.grid.no-bullet li {
+		width: 50%; } 
+	section.slideshow li {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}				
+	}
+@media screen and (max-width: 30em) {
+	#grid-gallery.grid-gallery section.grid-wrap ul.grid.no-bullet li {
+		width: 100%; } 
+	section.slideshow li {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}		
+	}
+
+		/*span.nav-prev:before {
+	content: "\e601";
+}
+span.nav-next:before  {
+	content: "\e600";
+}
+span.nav-close:before {
+	content: "\e602";
+}*/
+/* Info on arrow key navigation */
+/*.info-keys {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 60px;
+	font-size: 8px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.info-keys:before,
+.info-keys:after {
+	position: absolute;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+}
+
+.info-keys:before {
+	left: 10px;
+	content: "\e603";
+}
+
+.info-keys:after {
+	right: 10px;
+	content: "\e604";
+}*/
