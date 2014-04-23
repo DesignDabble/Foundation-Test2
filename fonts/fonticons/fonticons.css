@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "fonticons";
+  src:url("fonts/fonticons/fonticons.eot");
+  src:url("fonts/fonticons/fonticons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/fonticons/fonticons.woff") format("woff"),
+    url("fonts/fonticons/fonticons.ttf") format("truetype"),
+    url("fonts/fonticons/fonticons.svg#fonticons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "fonticons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fonticons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-syringue:before {
+  content: "a";
+}
+.icon-paint-bucket-streamline:before {
+  content: "b";
+}
+.icon-pen-streamline:before {
+  content: "c";
+}
+.icon-settings-streamline-1:before {
+  content: "d";
+}
+.icon-streamline-sync:before {
+  content: "e";
+}
+.icon-settings-streamline-2:before {
+  content: "f";
+}
+.icon-browser-streamline:before {
+  content: "g";
+}
+.icon-pencil-ruler-streamline:before {
+  content: "h";
+}
+.icon-picture-streamline:before {
+  content: "i";
+}
+.icon-lab:before {
+  content: "j";
+}
+.icon-github:before {
+  content: "k";
+}
+.icon-linkedin:before {
+  content: "l";
+}
+.icon-twitter:before {
+  content: "m";
+}
+.icon-right-open-big:before {
+  content: "n";
+}
+.icon-dribbble:before {
+  content: "o";
+}
+.icon-facebook:before {
+  content: "p";
+}
+.icon-address:before {
+  content: "q";
+}
+.icon-email-mail-streamline:before {
+  content: "r";
+}
+.icon-painting-pallet-streamline:before {
+  content: "s";
+}
+.icon-painting-roll-streamline:before {
+  content: "t";
+}
+.icon-settings-streamline:before {
+  content: "u";
+}
+.icon-backpack-streamline-trekking:before {
+  content: "v";
+}
+.icon-computer-network-streamline:before {
+  content: "w";
+}
+.icon-design-graphic-tablet-streamline-tablet:before {
+  content: "x";
+}
+.icon-map-streamline-user:before {
+  content: "y";
+}
+.icon-remote-control-streamline:before {
+  content: "z";
+}
+.icon-pen-streamline-3:before {
+  content: "A";
+}
+.icon-pen-streamline-2:before {
+  content: "B";
+}
+.icon-crop-streamline:before {
+  content: "C";
+}
+.icon-fontawesome-rightarrow-small:before {
+  content: "D";
+}
+.icon-fontawesome-leftarrow-small:before {
+  content: "E";
+}
+.icon-chart-line:before {
+  content: "H";
+}
+.icon-chart-area:before {
+  content: "I";
+}
+.icon-compass:before {
+  content: "J";
+}
+.icon-instagram:before {
+  content: "K";
+}
+.icon-up-open-big:before {
+  content: "L";
+}
+.icon-up-thin:before {
+  content: "M";
+}
+.icon-right-open-mini:before {
+  content: "N";
+}
+.icon-right-open:before {
+  content: "O";
+}
+.icon-browser:before {
+  content: "P";
+}
+.icon-github-alt:before {
+  content: "S";
+}
+.icon-goodreads:before {
+  content: "U";
+}
+.icon-paperplane:before {
+  content: "V";
+}
+.icon-search:before {
+  content: "W";
+}
+.icon-mail:before {
+  content: "X";
+}
+.icon-pencil:before {
+  content: "Y";
+}
+.icon-crop:before {
+  content: "Z";
+}
+.icon-up-open-mini:before {
+  content: "0";
+}
+.icon-down-open-big:before {
+  content: "1";
+}
+.icon-down-open-mini:before {
+  content: "2";
+}
+.icon-down-open:before {
+  content: "3";
+}
+.icon-left-open-big:before {
+  content: "4";
+}
+.icon-left-open:before {
+  content: "5";
+}
+.icon-left-open-mini:before {
+  content: "6";
+}
+.icon-login:before {
+  content: "7";
+}
+.icon-man-people-streamline-user:before {
+  content: "8";
+}
+.icon-map-pin-streamline:before {
+  content: "9";
+}
+.icon-arrow-streamline-target:before {
+  content: "!";
+}
+.icon-smiley-streamline:before {
+  content: "\"";
+}
+.icon-book-read-streamline:before {
+  content: "#";
+}
+.icon-computer-imac:before {
+  content: "$";
+}
+.icon-iphone-streamline:before {
+  content: "%";
+}
+.icon-ipad-streamline:before {
+  content: "&";
+}
+.icon-handle-streamline-vector:before {
+  content: "'";
+}
+.icon-grid-lines-streamline:before {
+  content: "(";
+}
+.icon-macintosh:before {
+  content: ")";
+}
+.icon-monocle-mustache-streamline:before {
+  content: "*";
+}
+.icon-picture-streamline-1:before {
+  content: "+";
+}
+.icon-pen-streamline-1:before {
+  content: ",";
+}
+.icon-fontawesome-webfont:before {
+  content: "-";
+}
+.icon-fontawesome-webfont-1:before {
+  content: ".";
+}
+.icon-fontawesome-webfont-4:before {
+  content: "/";
+}
+.icon-fontawesome-webfont-2:before {
+  content: "F";
+}

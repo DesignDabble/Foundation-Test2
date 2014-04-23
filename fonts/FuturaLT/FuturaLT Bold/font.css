@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Futura LT Book';
+  src: url('Futura LT Bold.eot'); /* IE9 Compat Modes */
+  src: url('Futura LT Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Futura LT Bold.woff') format('woff'), /* Modern Browsers */
+       url('Futura LT Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Futura LT Bold.svg#916cf0bcce4fa58c64872766190765db') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
