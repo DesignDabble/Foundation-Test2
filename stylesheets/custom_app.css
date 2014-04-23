@@ -31,54 +31,52 @@
   font-style:   normal;
   font-weight:  400;
 }
-/* ===== 	Body   ===== */
-/*body,
-body p {
-	font-family: 'AvenirLTStd-Light', Helvetica Neue, sans-serif;
-}
-h1 h2 h3 h4 h5 h6 {
-	font-family: 'AvenirLTStd-Medium' Arial, sans-serif;
-}*/
-/* ===== Header ===== */
-/*section.top-bar-section {
-  background: #efefef;
-}*/
 section.intro { 
-  display: block;      /*important*/
-  padding-top: 8rem;
-  min-height: 50vh;
+  /*display: block;*/      /*important*/
+  margin: auto;
+  position: relative;
+  min-height: 47vh;
   background: #3c4248;
-  text-align: center;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  /*position: absolute;*/
+  /*top: 0; left: 0; bottom: 0; right: 0;*/
 } 
 section.intro h1 {
-  padding: 1.8rem 0 1.25rem;
+  padding: 30px 25px 20px;
   border: 4px #BBC1C9 solid;
   color: #BA524D;
   letter-spacing: .08rem;
   font-weight: 600;
   font-size: 3rem;
-  /*display: block;*/
-  /*vertical-align: bottom;*/
-  /*font-family: 'AvenirLTStd-Light', Open-Sans, sans-serif;*/
+  text-align: center;
+  overflow: auto;
+  margin: auto;
+  /*position: absolute;*/
+  /*top: 0; left: 0; bottom: 0; right: 0;*/
 }
-/* ===== Intro2 ===== */
-.contain-to-grid.intro2 {
-  display: block;
+section.intro2 {
+  margin: auto;
+  position: relative;
   min-height: 50vh;
   background: #fff;
-  /*color: #9BA8B3;*/
-  /*font-family: 'AvenirLTStd-Light', sans-serif;*/
+  overflow: auto;
 }
-.contain-to-grid.intro4 {
-  display: block;
-  min-height: 50vh;
+section.intro3 {
+  min-height: 100vh;
+  background: #3c4248;
+  margin: auto;
+  position: relative;
+}
+section.intro4 {
+  margin: auto;
+  position: relative;
   background: #fff;
-  /*color: #9BA8B3;*/
-  /*font-family: 'AvenirLTStd-Light', sans-serif;*/
 }
 a.simple.button.medium.about {
   display: block;
-  margin: 2rem auto 3rem;
+  margin: 2rem auto ;
   outline: 1px solid #fff;
   /*color: #bcb78c;*/
   background: none;
@@ -94,11 +92,7 @@ a.simple.button.medium.work {
   background: none;
   text-transform: uppercase;
   letter-spacing: .16rem;
-  /*transition: all 0.2s ease;*/
   color: #bcb78c;
-  /*border: 3px #395970 solid;*/
-  /*text-align: center;*/
-  /*position: relative;*/
 }
 a.simple.button.medium.contact {
   display: block;
@@ -111,16 +105,6 @@ a.simple.button.medium.contact {
   /*border: 3px #395970 solid;*/
   /*text-align: center;*/
   /*position: relative;*/
-}
-
-/* ===== Intro3 ===== */
-.contain-to-grid.intro3 {
-  display: block;
-  min-height: 100vh;
-  background: #3c4248;
-/*vertical-align: middle;*/
-  /*position: absolute;*/
-  /*padding: 5.75rem auto;*/
 }
 h3.title {
   position: relative;
@@ -201,42 +185,34 @@ p.skill-description {
 }
 
 @media screen and (max-width: 24em) {
-  section.intro {
-    min-height: 40vh;
-  }
-  section.intro h1 {
-    padding: 1rem;
-  }
-  .contain-to-grid.intro2 {
-    min-height: 60vh;
-  }
-  h3.title {
-    margin: 1.5rem auto 0;
-  }
-  a.simple.button.medium.about {
-    display: block;
-    margin: 0 auto 2rem;
-  }
-p.intro-statement {
-  margin: .8rem auto 1rem;
-  text-align: left;
-  line-height: .8rem;
+  section.intro {min-height: 38vh; }
+  /*section.intro h1 {padding: 1rem; }*/
+  section.intro2 {min-height: 60vh; } 
 }
-p.skill-description {
-  text-align: left;
+  /*h3.title {margin: 1.5rem auto 0; }*/
+  /*a.simple.button.medium.about {display: block; margin: 0 auto 2rem; }*/
+  /*p.intro-statement {
+    margin: .8rem auto 1rem;
+    text-align: left;
+    line-height: .8rem;
+  }*/
+  /*p.skill-description {text-align: left; }*/
 
-}
-#contact-icons li,
-#contact-icons a,
-#contact-icons i {
-    display: table;
+.social-icons i {
+    /*display: table;*/
     /*width: 100%;*/
-    margin-left: 8rem;
-    color: #efefef;
+    /*margin-left: 8rem;*/
+    color: #fff;
     font-size: 300%;
-    text-align: justify;
-    position: relative;
-    left: 20%;
+    /*text-align: center;*/
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+    /*left: 20%;*/
 /*    -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
@@ -246,4 +222,17 @@ p.skill-description {
 
 footer.row {
   margin: 10rem auto 0;
+}
+
+.Center-Container {
+  position: relative;
+}
+
+.Absolute-Center {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }

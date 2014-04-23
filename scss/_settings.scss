@@ -44,6 +44,8 @@
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
+$body-font-color: #3c4248;
+$body-font-family: "AvenirLTStd-Light", "Helvetica Neue", Arial, sans-serif;
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
@@ -60,6 +62,12 @@
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+$primary-color: #3c4248;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #6C8FA9;
+$warning-color: #FC4B46;
+$info-color: #264A60;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -126,6 +134,7 @@
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
+$header-font-color: $secondary-color;
 
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
@@ -282,7 +291,7 @@
 // $block-grid-elements: 12;
 // $block-grid-default-spacing: rem-calc(20);
 // $align-block-grid-to-grid: false;
-
+$block-grid-elements: 4;
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 // $block-grid-media-queries: true;
@@ -1170,6 +1179,7 @@
 // Background color for the top bar
 // $topbar-bg-color: #333;
 // $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $primary-color;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1187,6 +1197,12 @@
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
+$topbar-dropdown-bg: $primary-color;
+$topbar-dropdown-link-color: #BBC1C9;
+$topbar-dropdown-link-bg: $primary-color;
+$topbar-dropdown-toggle-size: 10px;
+$topbar-dropdown-toggle-color: #BBC1C9;
+$topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
@@ -1203,6 +1219,7 @@
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
+$topbar-link-bg-hover: #444a4f;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
@@ -1235,6 +1252,7 @@
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+$topbar-arrows: false; //Set false to remove the triangle icon from the menu item
 
 //
 // VISIBILITY CLASSES
